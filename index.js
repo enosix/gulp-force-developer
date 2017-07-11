@@ -226,7 +226,7 @@ var force = {
       }
     };
 
-    var includeBundleSibblings = function(bundleDir, packagePaths) {
+    var includeBundleSiblings = function(bundleDir, packagePaths) {
       var dirListing = fs.readdirSync(bundleDir);
       for (var bundleFile of dirListing) {
         var bundleFilePath = bundleDir + '/' + bundleFile;
@@ -255,7 +255,7 @@ var force = {
         packagePaths[f] = packagePath;
         if (packagePath.isBundleItem) {
           // include everything in the bundle
-          includeBundleSibblings(path.dirname(f), packagePaths);
+          includeBundleSiblings(path.dirname(f), packagePaths);
         }
       }
       else {
