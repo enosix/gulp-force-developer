@@ -350,6 +350,10 @@ var force = {
         '    </types>',
         '    <types>',
         '        <members>*</members>',
+        '        <name>CustomMetadata</name>',
+        '    </types>',
+        '    <types>',
+        '        <members>*</members>',
         '        <name>CustomObject</name>',
         '    </types>',
         '    <types>',
@@ -750,6 +754,8 @@ function getPackagePath(dir, ext, filePath) {
       return { folderName: 'layouts', isBundleItem: false, hasMetadata: false };
     case '.letter':
       return { folderName: 'letterhead', isBundleItem: false, hasMetadata: false };
+    case '.md':
+      return { folderName: 'customMetadata', isBundleItem: false, hasMetadata: false };
     case '.object':
       return { folderName: 'objects', isBundleItem: false, hasMetadata: false };
     case '.objectTranslation':
