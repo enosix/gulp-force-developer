@@ -744,6 +744,8 @@ function getPackagePath(dir, ext, filePath) {
       return { folderName: 'communities', isBundleItem: false, hasMetadata: false };
     case '.component':
       return { folderName: 'components', isBundleItem: false, hasMetadata: true };
+    case '.flow':
+      return { folderName: 'flows', isBundleItem: false, hasMetadata: false };
     case '.group':
       return { folderName: 'group', isBundleItem: false, hasMetadata: false };
     case '.homePageLayout':
