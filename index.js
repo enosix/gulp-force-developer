@@ -332,6 +332,10 @@ var force = {
         '        <members>*</members>',
         '        <name>ConnectedApp</name>',
         '    </types>',
+        '    <types>',
+        '        <members>*</members>',
+        '        <name>ContentAsset</name>',
+        '    </types>',
         '     <types>',
         '        <members>*</members>',
         '        <name>CustomApplication</name>',
@@ -734,6 +738,8 @@ function getPackagePath(dir, ext, filePath) {
       return { folderName: 'approvalProcesses', isBundleItem: false, hasMetadata: false };
     case '.assignmentRules':
       return { folderName: 'assignmentRules', isBundleItem: false, hasMetadata: false };
+    case '.asset':
+      return { folderName: 'contentassets', isBundleItem: false, hasMetadata: true };
     case '.authproviders':
       return { folderName: 'authprovider', isBundleItem: false, hasMetadata: false };
     case '.autoResponseRules':
