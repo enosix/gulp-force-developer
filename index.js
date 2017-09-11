@@ -414,6 +414,10 @@ var force = {
         '    </types>',
         '    <types>',
         '        <members>*</members>',
+        '        <name>FlexiPage</name>',
+        '    </types>',
+        '    <types>',
+        '        <members>*</members>',
         '        <name>Group</name>',
         '    </types>',
         '    <types>',
@@ -750,6 +754,8 @@ function getPackagePath(dir, ext, filePath) {
       return { folderName: 'communities', isBundleItem: false, hasMetadata: false };
     case '.component':
       return { folderName: 'components', isBundleItem: false, hasMetadata: true };
+    case '.flexipage':
+      return { folderName: 'flexipages', isBundleItem: false, hasMetadata: false };
     case '.flow':
       return { folderName: 'flows', isBundleItem: false, hasMetadata: false };
     case '.group':
